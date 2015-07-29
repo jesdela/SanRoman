@@ -4,4 +4,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_mapa">Mapa</string>
+    <string name="title_activity_programa">Programa</string>
+    <string name="title_activity_toros">Toros</string>
 </resources>
