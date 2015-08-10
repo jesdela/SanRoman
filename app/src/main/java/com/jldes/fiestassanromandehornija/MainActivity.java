@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         RelativeLayout mapa = (RelativeLayout)findViewById(R.id.boton_mapa);
         RelativeLayout programa = (RelativeLayout)findViewById(R.id.boton_programa);
-        RelativeLayout toros = (RelativeLayout)findViewById(R.id.boton_toros);
+//        RelativeLayout toros = (RelativeLayout)findViewById(R.id.boton_toros);
         mapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,18 +29,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,Programa.class));
             }
         });
-        toros.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Toros.class));
-            }
-        });
+//        toros.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(MainActivity.this,Toros.class));
+//            }
+//        });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 

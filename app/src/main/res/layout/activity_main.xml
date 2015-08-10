@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jldes.fiestassanromandehornija.MainActivity">
+    tools:context="com.jldes.fiestassanromandehornija.MainActivity"
+    android:background="#ffffff">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,17 +18,9 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="#0ac331"
+            android:background="@mipmap/boton_mapa"
             android:id="@+id/boton_mapa">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:text="MAPA DE PEÑAS"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -36,36 +29,30 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="#c3b510"
+            android:background="@mipmap/boton_programa"
             android:id="@+id/boton_programa">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:text="PROGRAMA DE FIESTAS"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
         </RelativeLayout>
 
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@mipmap/boton_toros"-->
+            <!--android:id="@+id/boton_toros">-->
+
+        <!--</RelativeLayout>-->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="#ff0000"
-            android:id="@+id/boton_toros">
+            android:background="#fff"
+            android:id="@+id/boton_blanco">
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:text="TOROS"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
         </RelativeLayout>
     </LinearLayout>
 

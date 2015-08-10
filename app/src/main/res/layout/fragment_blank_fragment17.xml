@@ -1,10 +1,139 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f2f2d2"
     tools:context="com.jldes.fiestassanromandehornija.BlankFragment17">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView6"
+        android:layout_gravity="center_horizontal|top" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/title_section6"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/activity_vertical_margin" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11,00h "
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView45" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apertura de Atracciones infantiles. A cargo de Atracciones Piruleta en la C/ Bemardo Asensio (Plaza Escuelas)"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView46" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12,00h "
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView47" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Concurso de vinos Artesanos y Maridaje de vinos. Dirijido por Sonia Casas Garcia, enóloga en Bodegas Gordonzello&apos;"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView48" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17,00h "
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView49" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reapertura de Atracciones Infantiles"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView50" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18,00h "
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView51" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M@sterchef Sanroman. Se busca al mejor cocinero del pueblo. Cada participanie debe acudir al concurso con una tarta elaborada previamente, un riguroso jurado catará y decidirá quienes son las finalistas y tras una prueba final se elegirá al ganador. A..... demostrar vuestras artes culinarias."
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView52" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24,00h "
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView54" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gran Prix, dirigido por &quot;Mundilloltoro&quot;."
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView55" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

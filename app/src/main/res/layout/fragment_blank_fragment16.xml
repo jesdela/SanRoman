@@ -1,10 +1,152 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f2f2d2"
     tools:context="com.jldes.fiestassanromandehornija.BlankFragment16">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView5"
+        android:layout_gravity="center_horizontal|top" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/title_section5"
+                android:id="@+id/textView33"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/activity_vertical_margin" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11,00h "
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView34" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Misa y Procesión, en honor a San Roque. Oficiada por el RR. D. José Antonio de Castro. Seguida de procesión, con los Dulzaineros &quot;Tierras Llanas&quot;.. La Peña el Tio Ton hará los Tradicionales Toques en los Toriles con las Andas del Santo, para que nos proteja durante las Fiestas"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView35" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13,00h "
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView36" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Encierro por la calles. (Calle Juan Mora Garzón)"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView37" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19,00h "
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView38" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TARDE DE DETOROS, con exhibición de recortadores y  Presidida por las Reinas de las Fiestas."
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView39" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24,00h "
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView41" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cocurso de Playback, Karaoke dirigido y organizado por Zolopotroko"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:id="@+id/textView42" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cocurso de Dj&apos;s, organizado por las peñas"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:id="@+id/textView43" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02,00h "
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView40" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recorrido de Peñas, con Electrocharanga LOKOMOTORES para la elección de la mejor Peña decorada según temática elegida Degustación de Cocktail en cada Peña."
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView44" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

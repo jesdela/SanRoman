@@ -7,6 +7,7 @@ import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -74,7 +75,8 @@ public class Mapa extends FragmentActivity {
 
         mMap.animateCamera(camUpd3);
         mMap.addMarker(new MarkerOptions().position(new LatLng(41.48115, -5.28449)).title("Bureo"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.481986,-5.282492)).title("Alegales"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(41.481986,-5.282492)).title("Alegales").icon(BitmapDescriptorFactory
+                .fromResource(R.mipmap.alegales)));
         mMap.addMarker(new MarkerOptions().position(new LatLng(41.4833657,-5.2824862)).title("Tiberio"));
         mMap.addMarker(new MarkerOptions().position(new LatLng(41.48309,-5.28237)).title("Caso Aparte"));
         mMap.addMarker(new MarkerOptions().position(new LatLng(41.4826528,-5.282658)).title("Genijos"));

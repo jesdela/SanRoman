@@ -79,7 +79,7 @@ public class Programa extends AppCompatActivity implements ActionBar.TabListener
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_programa, menu);
+//        getMenuInflater().inflate(R.menu.menu_programa, menu);
         return true;
     }
 
@@ -171,13 +171,13 @@ public class Programa extends AppCompatActivity implements ActionBar.TabListener
                 case 2:
                     return getString(R.string.title_section3).toUpperCase(l);
                 case 3:
-                    return getString(R.string.title_section1).toUpperCase(l);
+                    return getString(R.string.title_section4).toUpperCase(l);
                 case 4:
-                    return getString(R.string.title_section2).toUpperCase(l);
+                    return getString(R.string.title_section5).toUpperCase(l);
                 case 5:
-                    return getString(R.string.title_section3).toUpperCase(l);
+                    return getString(R.string.title_section6).toUpperCase(l);
                 case 6:
-                    return getString(R.string.title_section3).toUpperCase(l);
+                    return getString(R.string.title_section7).toUpperCase(l);
             }
             return null;
         }

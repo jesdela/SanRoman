@@ -1,10 +1,113 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f2f2d2"
     tools:context="com.jldes.fiestassanromandehornija.BlankFragment15">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_gravity="center_horizontal|top" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/title_section4"
+                android:id="@+id/textView25"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/activity_vertical_margin" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13,00h "
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView26" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Misa y Procesión, en honor a Ntra. Sra. de la Asunción. Oficiada por el RR. D. José Antonio de Castro"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView27" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18,30h"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView29" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carrera de Autos-Locos. Organizada por las Peñas. (Por las calles Juan Mora Garzón y Chindasvinto)"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView30" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20,30h "
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/textView31" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Baile en la Plaza Mayor. Orquesta &quot;DIVERTIMENTO&quot;"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:id="@+id/textView28" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A continuación, suelta de Vaquillas"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:id="@+id/textView32" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
