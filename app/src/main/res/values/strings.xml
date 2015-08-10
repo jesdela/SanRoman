@@ -7,4 +7,15 @@
     <string name="title_activity_mapa">Mapa</string>
     <string name="title_activity_programa">Programa</string>
     <string name="title_activity_toros">Toros</string>
+
+    <string name="title_section1">Miércoles 12</string>
+    <string name="title_section2">Jueves 13</string>
+    <string name="title_section3">Viernes 14</string>
+    <string name="title_section4">Sábado 15</string>
+    <string name="title_section5">Domingo 16</string>
+    <string name="title_section6">Lunes 17</string>
+    <string name="title_section7">Martes 18</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

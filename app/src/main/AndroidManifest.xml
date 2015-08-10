@@ -40,12 +40,12 @@
             android:label="@string/title_activity_mapa" >
         </activity>
         <activity
-            android:name=".Programa"
-            android:label="@string/title_activity_programa" >
-        </activity>
-        <activity
             android:name=".Toros"
             android:label="@string/title_activity_toros" >
+        </activity>
+        <activity
+            android:name=".Programa"
+            android:label="@string/title_activity_programa" >
         </activity>
     </application>
 
