@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -53,7 +53,12 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_SEND);
+            intent.putExtra(Intent.EXTRA_TEXT, "¡Vive las Fiestas de San Román de Hornija desde tu móvil! https://play.google.com/store/apps/details?id=com.jldes.fiestassanromandehornija");
+            intent.setType("text/plain");
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Fiestas de San Román de Hornija");
+            startActivity(Intent.createChooser(intent, getString(R.string.app_name)));
         }
 
         return super.onOptionsItemSelected(item);

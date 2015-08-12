@@ -7,14 +7,22 @@
 https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=37:6D:88:33:AB:C7:6C:34:DC:5C:23:3B:09:2B:5E:40:E9:6E:12:08%3Bcom.jldes.fiestassanromandehornija
 
     You can also add your credentials to an existing key, using this line:
+    Ordenador de casa
     37:6D:88:33:AB:C7:6C:34:DC:5C:23:3B:09:2B:5E:40:E9:6E:12:08;com.jldes.fiestassanromandehornija
-
+    Ordenador oficina
+    56:E1:55:63:DE:B2:FA:9C:5F:C6:C8:EC:40:E8:1B:B9:6E:6F:E9:30;com.jldes.fiestassanromandehornija
     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
     string in this file.
     -->
+    <!-- Ordenador de casa-->
     <!--<string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">-->
         <!--AIzaSyA0i2-i_lZoK4GtIbsiMA1N1ZRWBobzmTw-->
     <!--</string>-->
+    <!-- Ordenador de oficina-->
+    <!--<string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">-->
+        <!--AIzaSyCEZfWhIpsFtQh4OqXjG2l4_p0Gv9etmKc-->
+    <!--</string>-->
+    <!-- Apk-->
     <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
         AIzaSyB-f9Hre_edAyJ4TT28UlXf9_3_YbXbj5k
     </string>

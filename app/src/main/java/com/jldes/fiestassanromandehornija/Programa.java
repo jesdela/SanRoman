@@ -2,6 +2,7 @@ package com.jldes.fiestassanromandehornija;
 
 import java.util.Locale;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -79,7 +80,7 @@ public class Programa extends AppCompatActivity implements ActionBar.TabListener
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_programa, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -92,7 +93,12 @@ public class Programa extends AppCompatActivity implements ActionBar.TabListener
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_SEND);
+            intent.putExtra(Intent.EXTRA_TEXT, "¡Vive las Fiestas de San Román de Hornija desde tu móvil! https://play.google.com/store/apps/details?id=com.jldes.fiestassanromandehornija");
+            intent.setType("text/plain");
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Fiestas de San Román de Hornija");
+            startActivity(Intent.createChooser(intent, getString(R.string.app_name)));
         }
 
         return super.onOptionsItemSelected(item);
