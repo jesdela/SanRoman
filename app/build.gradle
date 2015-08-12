@@ -6,10 +6,10 @@ android {
 
     defaultConfig {
         applicationId "com.jldes.fiestassanromandehornija"
-        minSdkVersion 17
+        minSdkVersion 14
         targetSdkVersion 22
-        versionCode 2
-        versionName "1.0"
+        versionCode 4
+        versionName "1.0.1"
     }
     buildTypes {
         release {
