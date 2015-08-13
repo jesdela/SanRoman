@@ -87,7 +87,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TARDE DE DETOROS, con exhibición de recortadores y  Presidida por las Reinas de las Fiestas."
+                    android:text="TARDE DE TOROS, con exhibición de recortadores y  Presidida por las Reinas de las Fiestas."
                     android:layout_margin="@dimen/activity_horizontal_margin"
                     android:id="@+id/textView39" />
 
@@ -114,14 +114,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cocurso de Playback, Karaoke dirigido y organizado por Zolopotroko"
+                        android:text="Concurso de Playback, Karaoke dirigido y organizado por Zolopotroko"
                         android:layout_margin="@dimen/activity_horizontal_margin"
                         android:id="@+id/textView42" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cocurso de Dj&apos;s, organizado por las peñas"
+                        android:text="Concurso de Dj&apos;s, organizado por las peñas"
                         android:layout_margin="@dimen/activity_horizontal_margin"
                         android:id="@+id/textView43" />
                 </LinearLayout>

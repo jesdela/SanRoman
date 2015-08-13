@@ -8,8 +8,8 @@ android {
         applicationId "com.jldes.fiestassanromandehornija"
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 5
-        versionName "1.0.2"
+        versionCode 6
+        versionName "1.0.3"
     }
     buildTypes {
         release {
