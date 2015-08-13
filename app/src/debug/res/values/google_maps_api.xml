@@ -19,11 +19,11 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
         <!--AIzaSyA0i2-i_lZoK4GtIbsiMA1N1ZRWBobzmTw-->
     <!--</string>-->
     <!-- Ordenador de oficina-->
-    <!--<string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">-->
-        <!--AIzaSyCEZfWhIpsFtQh4OqXjG2l4_p0Gv9etmKc-->
-    <!--</string>-->
-    <!-- Apk-->
     <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
-        AIzaSyB-f9Hre_edAyJ4TT28UlXf9_3_YbXbj5k
+        AIzaSyCEZfWhIpsFtQh4OqXjG2l4_p0Gv9etmKc
     </string>
+    <!-- Apk-->
+    <!--<string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">-->
+        <!--AIzaSyB-f9Hre_edAyJ4TT28UlXf9_3_YbXbj5k-->
+    <!--</string>-->
 </resources>

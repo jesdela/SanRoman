@@ -2,6 +2,10 @@ package com.jldes.fiestassanromandehornija;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -10,11 +14,17 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+
+import java.util.ArrayList;
 
 public class Mapa extends FragmentActivity {
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
+    ArrayList<MarkerOptions> marcadores = new ArrayList<MarkerOptions>();
+    private MyInfoWindowAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,38 +84,105 @@ public class Mapa extends FragmentActivity {
                 CameraUpdateFactory.newCameraPosition(camPos);
 
         mMap.animateCamera(camUpd3);
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.48115, -5.28449)).title("El Bureo").icon(BitmapDescriptorFactory
-                .fromResource(R.mipmap.marcador_bureo )));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.481986,-5.282492)).title("Los Alegales").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.48115, -5.28449)).title("El Bureo").icon(BitmapDescriptorFactory
+                .fromResource(R.mipmap.marcador_bureo)));
+        marcadores.add(new MarkerOptions().position(new LatLng(41.481986, -5.282492)).title("Los Alegales").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_alegales)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.4835444,-5.2824427)).title("Tiberio").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.4835444, -5.2824427)).title("Tiberio").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_tiberio)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.48309,-5.28237)).title("Caso Aparte").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.48309, -5.28237)).title("Caso Aparte").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_caso_aparte)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.4826528,-5.282658)).title("Genijos").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.4826528, -5.282658)).title("Genijos").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_genijos)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.48175,-5.28206)).title("Los Hombres de Lucio").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.48175, -5.28206)).title("Los Hombres de Lucio").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_lucios)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.4817005,-5.2825199)).title("El Apeton").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.4817005, -5.2825199)).title("El Apeton").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_apeton)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.481876,-5.2831661)).title("Los Yenkos").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.481876, -5.2831661)).title("Los Yenkos").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_yenkos)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.4817005,-5.2830855)).title("Los Monguis").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.4817006, -5.2830855)).title("Los Monguis").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_monguis)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.481531,-5.282996)).title("BB+").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.481531, -5.282996)).title("BB+").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_bbmas)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.4819288,-5.2845682)).title("El Espante").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.4819288, -5.2845682)).title("El Espante").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_espante)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.48149,-5.28509)).title("La Pelerina").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.48149, -5.28509)).title("La Pelerina").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_pelerina)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.48092,-5.28516)).title("El Zarbascazo").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.48092, -5.28516)).title("El Zarbascazo").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_zarbascazo)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.4808884,-5.2873299)).title("El Desmadre").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.4808884, -5.2873299)).title("El Desmadre").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_desmadre)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.4796277,-5.2873597)).title("Plan B").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.4796277, -5.2873597)).title("Plan B").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_planb)));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(41.4798201,-5.2870091)).title("El Convento").icon(BitmapDescriptorFactory
+        marcadores.add(new MarkerOptions().position(new LatLng(41.4798201,-5.2870091)).title("El Convento").icon(BitmapDescriptorFactory
                 .fromResource(R.mipmap.marcador_convento)));
+        for (MarkerOptions marcador:marcadores
+             ) {
+            mMap.addMarker(marcador);
+        }
+        adapter = new MyInfoWindowAdapter();
+        mMap.setInfoWindowAdapter(adapter);
         mMap.setMyLocationEnabled(true);
     }
+    // Creacion de la ventana del marcador
+    class MyInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
+        private View myContentsView;
+
+        public MyInfoWindowAdapter() {
+            myContentsView = getLayoutInflater().inflate(R.layout.marcador,
+                    null);
+
+        }
+
+        @Override
+        public View getInfoContents(Marker marker) {
+            ImageView logo = (ImageView) myContentsView.findViewById(R.id.logo);
+            TextView nombre = (TextView) myContentsView.findViewById(R.id.titulo);
+            nombre.setText(marker.getTitle());
+
+            Log.d("icono", marker.getPosition().toString());
+            double i = marker.getPosition().latitude;
+            if (i == 41.48115) {
+                logo.setImageResource(R.mipmap.alegales);
+            } else if (i == 41.481986) {
+                logo.setImageResource(R.mipmap.alegales);
+            } else if (i == 41.4835444) {
+                logo.setImageResource(R.mipmap.el_tiberio);
+            } else if (i == 41.48309) {
+                logo.setImageResource(R.mipmap.caso_aparte);
+            } else if (i == 41.4826528) {
+                logo.setImageResource(R.mipmap.logo_los_genijos);
+            } else if (i == 41.48175) {
+                logo.setImageResource(R.mipmap.hombres_de_lucio);
+            } else if (i == 41.4817005) {
+                logo.setImageResource(R.mipmap.el_apeton);
+            } else if (i == 41.481876) {
+                logo.setImageResource(R.mipmap.yenkos);
+            } else if (i == 41.4817006) {
+                logo.setImageResource(R.mipmap.los_monguis);
+            } else if (i == 41.481531) {
+                logo.setImageResource(R.mipmap.bb_mas);
+            } else if (i == 41.4819288) {
+                logo.setImageResource(R.mipmap.el_espante);
+            } else if (i == 41.48149) {
+                logo.setImageResource(R.mipmap.la_peregrina);
+            } else if (i == 41.48092) {
+                logo.setImageResource(R.mipmap.zarbascazo);
+            } else if (i == 41.4808884) {
+                logo.setImageResource(R.mipmap.el_desmadre);
+            } else if (i == 41.4796277) {
+                logo.setImageResource(R.mipmap.logo_plan_b);
+            } else if (i == 41.4798201) {
+                logo.setImageResource(R.mipmap.convento);
+            }
+            return myContentsView;
+        }
+
+        @Override
+        public View getInfoWindow(final Marker marker) {
+            return null;
+
+        }
+    }
+
 }
